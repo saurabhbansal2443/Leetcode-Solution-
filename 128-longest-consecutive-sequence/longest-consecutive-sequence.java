@@ -6,12 +6,12 @@ class Solution {
             hm.put(i,false);
         }
 
-        for(int i : hm.keySet()){
+        // for(int i : hm.keySet()){
 
-            if(hm.containsKey(i-1)==false){
-                hm.put(i,true);
-            }
-        }
+        //     if(hm.containsKey(i-1)==false){
+        //         hm.put(i,true);
+        //     }
+        // }
 
 
         int maxfre = 0;
@@ -20,7 +20,7 @@ class Solution {
 
             int k = 1 ;
 
-            if(hm.get(i)==true){
+            if(hm.containsKey(i-1)==false){
 
                     while(hm.containsKey(i+k)==true){
                         k++;
